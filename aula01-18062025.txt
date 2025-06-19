@@ -1,1 +1,114 @@
-Utilizando o Github pela primeira vez...
+{
+senac@senac-VirtualBox:~$ sudo
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-ABkNnS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-ABkNnS] [-g group] [-h host] [-p prompt] [-U user]
+            [-u user] [command [arg ...]]
+usage: sudo [-ABbEHkNnPS] [-r role] [-t type] [-C num] [-D directory]
+            [-g group] [-h host] [-p prompt] [-R directory] [-T timeout]
+            [-u user] [VAR=value] [-i | -s] [command [arg ...]]
+usage: sudo -e [-ABkNnS] [-r role] [-t type] [-C num] [-D directory]
+            [-g group] [-h host] [-p prompt] [-R directory] [-T timeout]
+            [-u user] file ...
+senac@senac-VirtualBox:~$ sudo -i
+[sudo] senha para senac:          
+root@senac-VirtualBox:~# 
+
+}
+
+Sempre que aparecer o ($) você não pode fazer nada
+
+Quando aparecer esse (~#) você se torna root 
+
+
+o root se não for bem usado pode fazer cagada no sistema.
+
+
+----------------------------------
+
+
+Comandos para Atualizar o Linux (Explicado de Forma Resumida)
+
+Este documento contém os principais comandos usados para atualizar o sistema Linux baseado em Debian (como Ubuntu e Linux Mint), com uma explicação resumida de cada um.
+
+🔐 sudo -i
+
+Entra no modo root (administrador).
+
+Você ganha acesso total ao sistema e não precisa digitar sudo a cada comando.
+
+🔄 sudo apt update
+
+Atualiza a lista de pacotes disponíveis nos repositórios.
+
+Não instala nada, apenas verifica se há versões novas dos programas.
+
+📦 sudo apt upgrade
+
+Atualiza os programas já instalados para as versões mais recentes.
+
+Não remove nem instala novos pacotes.
+
+🚀 sudo apt full-upgrade
+
+Atualiza todos os pacotes como o upgrade, mas também pode remover ou instalar pacotes se for necessário para completar a atualização.
+
+Mais "agressivo" que o upgrade.
+
+🧪 sudo apt dist-upgrade
+
+É similar ao full-upgrade, usado em versões mais antigas do apt.
+
+Também realiza atualizações mais completas, podendo instalar e remover pacotes.
+
+🧹 sudo apt autoremove
+
+Remove pacotes instalados automaticamente e que não são mais necessários (ex: dependências de programas desinstalados).
+
+🧼 sudo apt autoclean
+
+Limpa pacotes baixados e antigos que não podem mais ser instalados (versões antigas de programas).
+
+🧽 sudo apt clean
+
+Remove todos os arquivos .deb baixados e armazenados em cache.
+
+Libera mais espaço em disco.
+
+💡 Dica Final: O comando mais comum para manter seu sistema atualizado com segurança é:
+
+sudo apt update && sudo apt upgrade
+
+
+----------------------------------
+
+
+sudo apt install vim git python3 pip cloc
+
+Instala cinco programas no Linux de uma vez só. Aqui está o que cada um faz, de forma resumida:
+
+🧱 Explicando cada parte:
+sudo: executa o comando como administrador.
+
+apt install: comando usado para instalar programas no sistema baseado em Debian/Ubuntu.
+
+Os nomes seguintes são os programas que serão instalados:
+
+📦 Programas que serão instalados:
+vim
+→ Editor de texto no terminal, muito usado para editar arquivos de configuração e códigos.
+
+git
+→ Sistema de controle de versões. Usado para trabalhar com repositórios de código (ex: GitHub).
+
+python3
+→ Linguagem de programação Python, versão 3 (a versão mais usada atualmente).
+
+pip
+→ Gerenciador de pacotes do Python. Usado para instalar bibliotecas do Python (ex: pip install flask).
+
+cloc
+→ "Count Lines of Code" — conta quantas linhas de código há em um projeto (útil para análise).
+
+
+Feito por Juan Rozas - para estudos com base nas aulas do professor Vaamonde.
