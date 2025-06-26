@@ -79,6 +79,11 @@ Libera mais espaço em disco.
 
 sudo apt update && sudo apt upgrade
 
+-sudo init 0
+-sudo poweroff
+
+Esses dois comando desliga o sistema
+
 
 ----------------------------------
 
