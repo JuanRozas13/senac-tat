@@ -79,13 +79,14 @@ Libera mais espaço em disco.
 
 sudo apt update && sudo apt upgrade
 
--sudo init 0
--sudo poweroff
+✨sudo init 0
+✨sudo poweroff
 
 Esses dois comando desliga o sistema
 
+👍 top
 
-----------------------------------
+exibe informações dinâmicas e em tempo real sobre o sistema, como processos em execução e o uso de recursos como CPU e memória
 
 
 sudo apt install vim git python3 pip cloc
