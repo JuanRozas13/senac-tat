@@ -1,0 +1,25 @@
+📂ls
+
+Lista arquivos e diretórios.
+
+📂ls -lh
+
+Lista com mais detalhes, mostrando:
+
+-l: formato longo (permissões, dono, data, tamanho, etc.)
+
+-h: tamanhos legíveis (ex: 1.2K, 3.5M)
+
+📂ls -lha
+
+Lista todos os arquivos, inclusive os ocultos (. e ..), com detalhes e tamanhos legíveis.
+
+Que faz cada opção:
+
+-l: formato longo (detalhado)
+
+-h: tamanhos legíveis (K, M, G...)
+
+-a: mostra arquivos ocultos (os que começam com .)
+
+
