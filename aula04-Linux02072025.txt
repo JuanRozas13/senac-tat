@@ -1,0 +1,13 @@
+#verificando as versões e codinome do sistema operacional
+sudo cat /etc/os-release
+
+#verificando as informações do Linux Standard Base
+sudo cat /etc/lsb-release
+
+#Linux Mint Versão 22.x - Kernel >= 6.8 (TESTADO E HOMOLOGADO, RECOMENDO A SUA INSTALAÇÃO)
+sudo apt install linux-oem-24.04b fdutils
+
+#Verificando a versão do Kernel que está rodando na inicialização do Linux Mint
+#opção do comando uname: -a (all)
+sudo uname -a
+
