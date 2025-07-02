@@ -1,0 +1,41 @@
+Abrir uma (OS).
+
+Passos 1:
+
+1 - Data/Hora
+
+2 - Dados
+
+3 - Iformação dos Equipamento (Anotar os defeitos que a peça ja chegou na sua mão)
+
+4 - Converasar sobre o problema da maquina Obs: Fazer boas perguntas para identificar o problema mais rapido
+
+Passo 2:
+
+chegou na bancada
+
+1 - check list (possiveis problemas, colocar as coisas mais comuns e mais simplis no topo da lista)
+
+2 - TE
+
+3 - Passar Orçamento
+- mão de obra
+- peça
+
+4 - Trabalho (limpeza no pc etc)
+
+5 - doc: Nfe de serviço e doc: de garantia do serviço
+
+6 - entrar em contato com cliente
+
+OBS:
+
+-TE (tentativa e erro)
+
+-Taxa de visita
+
+-RMA (Garantia) 
+
+-Fifo (primeiro que entra primeiro que sai)
+ 
+-se o cliente não arovar o orçamento não entregue de mão beijada o 
