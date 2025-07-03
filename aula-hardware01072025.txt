@@ -1,41 +1,72 @@
-Abrir uma (OS).
+📝 Abertura de Ordem de Serviço (OS) - Hardware
 
-Passos 1:
+📅 Passo 1: Abertura da OS
 
-1 - Data/Hora
+1️⃣ Data/HoraRegistrar a data e o horário da abertura da OS.
 
-2 - Dados
+2️⃣ DadosColetar e registrar os dados do cliente (nome, telefone, email, endereço, CPF/CNPJ).
 
-3 - Iformação dos Equipamento (Anotar os defeitos que a peça ja chegou na sua mão)
+3️⃣ Informações do Equipamento 🖥️Anotar todas as informações relevantes do equipamento: marca, modelo, número de série e defeitos apresentados quando chegou.
 
-4 - Converasar sobre o problema da maquina Obs: Fazer boas perguntas para identificar o problema mais rapido
+4️⃣ Conversa sobre o Problema 💬Conversar com o cliente para entender o problema da máquina.➡️ Fazer boas perguntas para identificar o problema de forma mais rápida e precisa.
 
-Passo 2:
+🛠️ Passo 2: Análise e Execução do Serviço
 
-chegou na bancada
+1️⃣ Checklist de Possíveis Problemas ✅Listar os problemas mais comuns e simples no topo:
 
-1 - check list (possiveis problemas, colocar as coisas mais comuns e mais simplis no topo da lista)
+Cabos soltos
 
-2 - TE
+Poeira/limpeza
 
-3 - Passar Orçamento
-- mão de obra
-- peça
+Memória RAM
 
-4 - Trabalho (limpeza no pc etc)
+HD/SSD
 
-5 - doc: Nfe de serviço e doc: de garantia do serviço
+Fonte de alimentação
 
-6 - entrar em contato com cliente
+Placa-mãe
 
-OBS:
+Placa de vídeo
 
--TE (tentativa e erro)
+Conectores USB
 
--Taxa de visita
+2️⃣ TE - Tentativa e Erro 🔄Aplicar o método de tentativa e erro para diagnosticar o defeito.
 
--RMA (Garantia) 
+3️⃣ Passar Orçamento 💰Informar o cliente sobre o custo:
 
--Fifo (primeiro que entra primeiro que sai)
- 
--se o cliente não arovar o orçamento não entregue de mão beijada o 
+💵 Mão de obra
+
+🔧 Peças
+
+4️⃣ Trabalho de Manutenção 🧹Realizar o trabalho: limpeza do PC, troca de peças, aplicação de pasta térmica etc.
+
+5️⃣ Documentação 📄Emitir:
+
+🧾 Nota Fiscal de Serviço (NFe)
+
+🛡️ Documento de Garantia do Serviço
+
+6️⃣ Contato com o Cliente 📱Manter o cliente informado sobre o andamento do serviço e aprovação do orçamento.
+
+
+
+📝 Observações Importantes:
+
+🔄 TE (Tentativa e Erro): Diagnóstico prático identificando a origem do problema.
+
+🚗 Taxa de Visita: Em caso de deslocamento até o cliente.
+
+🔁 RMA (Garantia): Verificar se a peça está dentro do prazo de garantia para possível substituição.
+
+⏳ FIFO (First In, First Out): Priorizar o atendimento de acordo com a ordem de chegada.
+
+⚠️ Orçamento não aprovado: Não entregar todas as informações técnicas ou diagnóstico completo se o cliente não aprovar o orçamento.
+
+📌 Resumo Visual:
+
+📅 Data/Hora  ➡️  📝 Dados do Cliente  ➡️  🖥️ Informações do Equipamento  ➡️  💬 Conversa
+
+🛠️ Checklist  ➡️ 🔄 Tentativa e Erro  ➡️ 💰 Orçamento  ➡️ 🧹 Trabalho  ➡️ 📄 Documentos  ➡️ 📱 Contato
+
+👍 Dica Extra: Mantenha um padrão de atendimento e documentação para passar mais profissionalismo e confiança ao cliente.
+
