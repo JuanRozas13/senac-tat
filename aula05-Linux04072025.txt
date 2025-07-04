@@ -1,0 +1,31 @@
+Corrigindo erro :
+E: O dpkg foi interrompido, para corrigir o problema tem 
+de correr manualmente 'sudo dpkg --configure -a'
+
+Esse erro significa que o dpkg, que é o gerenciador de pacotes do Debian/Ubuntu/Linux Mint, foi interrompido no meio da instalação, remoção ou atualização de algum programa. Isso pode acontecer, por exemplo, se o sistema travou, o terminal foi fechado ou o comando foi cancelado no meio do processo.
+
+Para corrigir:
+Abra o terminal.
+
+Digite o comando sugerido:
+
+bash
+Copy code
+sudo dpkg --configure -a
+Pressione Enter e aguarde ele terminar de configurar os pacotes pendentes.
+
+Se aparecerem outros erros depois disso, me envie aqui que te ajudo a resolver.
+
+✅ Dica extra:
+Se o erro persistir, às vezes rodar também:
+
+bash
+Copy code
+sudo apt update
+sudo apt upgrade
+pode ajudar a completar o processo.
+
+
+
+
+
