@@ -1,1 +1,3 @@
-
+Codigo:
+-ipconfig
+-ipconfig /all
