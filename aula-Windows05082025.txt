@@ -56,3 +56,6 @@ Não precisa configurar IPs manualmente
 Evita conflitos de IP
 Facilita a administração da rede.
 
+-------------------------------------------
+
+https://github.com/JuanRozas13/senac-tat/blob/main/Fundamnetos%20em%20Windows/redes_comandos_conceitos.md
