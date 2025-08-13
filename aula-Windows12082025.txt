@@ -1,3 +1,123 @@
-net use t: \\pc01\java
+📄 Guia de Configuração — Windows XP no VirtualBox
 
-cls
+Este documento reúne anotações e procedimentos para instalar e configurar o Windows XP Professional em uma máquina virtual no VirtualBox, incluindo ajustes de rede, compartilhamento de pastas, alteração de nome, MAC address e mapeamento de unidades.
+
+🖥 1. Instalação do Windows XP no VirtualBox
+
+Etapas:
+
+Criar uma nova VM:
+
+Nome: Windows XP Professional
+
+Tipo: Microsoft Windows
+
+Versão: Windows XP (32-bit)
+
+Memória RAM: 512 MB (mínimo) ou 1024 MB (recomendado)
+
+Disco: 20 GB, formato VDI, alocação dinâmica
+
+Configurar antes de iniciar:
+
+Ordem de boot: CD/DVD primeiro
+
+Adicionar a imagem ISO do Windows XP em “Armazenamento”
+
+Rede: usar NAT ou Bridge (para internet)
+
+Instalar o Windows XP:
+
+Aceitar contrato de licença
+
+Criar e formatar a partição (NTFS rápido)
+
+Configurar idioma, nome, serial e senha
+
+Pós-instalação:
+
+Instalar “Adicionais para Convidado” para melhor desempenho e integração
+
+--------------------------------------------------------------------------
+
+🌐 2. Configuração de IP e Máscara
+
+Alterar IP manualmente
+Define um endereço IP fixo, máscara e gateway para a placa de rede da VM.
+
+Alterar DNS
+Configura o servidor de DNS a ser utilizado (por exemplo, 8.8.8.8 do Google).
+
+Voltar para DHCP
+Restaura a configuração automática de IP e DNS, obtendo-os do roteador.
+
+--------------------------------------------------------------------------
+
+🗂 3. Compartilhamento de Pastas entre VMs
+
+O compartilhamento padrão do VirtualBox funciona apenas entre host ↔ VM.
+Para comunicação entre VM ↔ VM, é necessário:
+
+Colocar ambas as VMs na mesma rede (Rede Interna ou Host-Only)
+
+Ativar “Descoberta de Rede” e “Compartilhamento de Arquivos e Impressoras” no Windows
+
+Compartilhar a pasta desejada
+
+Acessar a pasta pela outra VM usando o nome ou IP do computador
+
+--------------------------------------------------------------------------
+
+🔑 4. Alterar Nome do Computador no Windows XP
+
+Via WMIC
+Altera diretamente o nome do computador no sistema.
+
+Requer reinicialização para aplicar.
+
+Via Registro do Windows
+Modifica chaves do sistema que armazenam o nome da máquina.
+
+Também exige reinicialização.
+
+--------------------------------------------------------------------------
+
+🔄 5. Alterar MAC Address
+
+Pela interface do VirtualBox
+Acesse Configurações → Rede → Avançado → Endereço MAC e defina um novo valor.
+Útil para evitar conflitos de rede ou simular outro dispositivo.
+
+Pelo comando VBoxManage
+Permite alterar o MAC pelo terminal do host, sem abrir a interface gráfica.
+
+--------------------------------------------------------------------------
+
+📌 6. Máscaras de Sub-rede — Exemplos
+Máscara	CIDR	Hosts possíveis	Uso comum
+255.255.255.0	/24	254	Redes domésticas ou pequenas
+255.255.0.0	/16	65.534	Redes grandes
+255.255.255.252	/30	2	Conexões ponto a ponto
+
+--------------------------------------------------------------------------
+
+💽 7. Mapeamento de Unidade de Rede
+
+Comando net use t: \\pc01\java
+Conecta a pasta compartilhada java do computador pc01 e a monta como unidade T: no Windows.
+Útil para acessar arquivos de outro computador como se fosse um disco local.
+
+Remover unidade mapeada
+Desfaz a conexão da unidade de rede, liberando a letra de unidade para outro uso.
+
+📚 Observações Importantes
+
+Sempre desligue a VM antes de alterar o MAC ou as configurações de rede.
+
+Evite IPs duplicados para prevenir conflitos.
+
+Para que as VMs se vejam e tenham internet, use:
+
+Adaptador 1: NAT (internet)
+
+Adaptador 2: Rede Interna (comunicação entre VMs)
