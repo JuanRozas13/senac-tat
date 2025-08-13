@@ -1,1 +1,3 @@
+net use t: \\pc01\java
 
+cls
