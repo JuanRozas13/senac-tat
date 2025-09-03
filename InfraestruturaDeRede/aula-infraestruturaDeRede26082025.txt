@@ -1,1 +1,22 @@
+internet
+wan: 
+wpa2
+criptografia :AES
+isp:
+so(small office) ho(home office)
+
+
+
+ethernet maior velocidade 10
+fast maior velocidade 100
+giga maior velocidade 1000 mbps
+
+1w : wifi
+1g : g
+1f : fibra
+
+o  que é wifi 5, 6 e 7?
+
+projeto novo wifi 7 para uma casa ou escritorio novo
+
 
