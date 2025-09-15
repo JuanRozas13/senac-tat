@@ -1,22 +1,56 @@
-internet
-wan: 
-wpa2
-criptografia :AES
-isp:
-so(small office) ho(home office)
+📶 Guia Básico de Rede para Casa ou Escritório Pequeno (SO/HO)
+Este guia é para quem está começando e quer entender como montar uma rede moderna com Wi-Fi 7. 🚀
+
+1️⃣ O que é WAN e ISP?
+
+🌐 WAN: é a parte da rede que conecta sua casa à Internet.
+🏢 ISP: é o provedor de Internet (ex.: Vivo, Claro, Oi).
 
 
+2️⃣ O que é Wi-Fi?
 
-ethernet maior velocidade 10
-fast maior velocidade 100
-giga maior velocidade 1000 mbps
+📡 É a tecnologia que conecta seus aparelhos (celulares, notebooks, TVs) à Internet sem fio.
 
-1w : wifi
-1g : g
-1f : fibra
 
-o  que é wifi 5, 6 e 7?
+3️⃣ Segurança: WPA2 e WPA3
 
-projeto novo wifi 7 para uma casa ou escritorio novo
+🔒 WPA2: padrão seguro usado há anos.
+🛡️ WPA3: mais seguro, recomendado para redes novas.
+✅ Dica: use senhas fortes e ative WPA3 se possível.
 
+
+4️⃣ Ethernet: 10/100/1000
+
+🔌 São velocidades de conexão com fio:
+
+⚡ 10 = 10 Mb/s (muito lenta)
+⚡ 100 = 100 Mb/s (ok)
+⚡ 1000 = 1000 Mb/s ou 1 Gb/s (rápida)
+
+
+💡 Para redes novas, use cabos Cat6 ou Cat6A.
+
+
+5️⃣ Diferença entre Wi-Fi 5, 6, 6E e 7
+
+📶 Wi-Fi 5: mais antigo, usa 5 GHz.
+📶 Wi-Fi 6: mais rápido e eficiente.
+📶 Wi-Fi 6E: adiciona a faixa de 6 GHz (menos congestionada).
+🚀 Wi-Fi 7: o mais novo, muito rápido, ideal para jogos, vídeos e muitos dispositivos.
+
+
+6️⃣ Como montar uma rede com Wi-Fi 7
+
+🖥️ Tenha um roteador Wi-Fi 7.
+🔌 Use cabos modernos (Cat6 ou Cat6A).
+🏠 Coloque o roteador no centro da casa para melhor sinal.
+🔐 Crie uma senha forte e use WPA3.
+👥 Crie uma rede para visitantes separada.
+
+
+7️⃣ Dicas finais
+
+📲 Atualize seus aparelhos para suportar Wi-Fi 6 ou 7.
+🚫 Evite colocar o roteador perto de micro-ondas ou espelhos.
+📊 Teste a velocidade com apps como Speedtest.
 
