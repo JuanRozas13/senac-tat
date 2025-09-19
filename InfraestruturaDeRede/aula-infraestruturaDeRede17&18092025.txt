@@ -1,1 +1,32 @@
+17/09
 
+
+18/09
+
+Cabo Cat5e -  
+((maior + médio)/2 + 4 *Qtdpontos) /300
+
+16 + 11  = 27 /2 = 14+4 = 18 * 30
+540 /300 = 2 caixas = 1470,00
+
+Rj45 Macho - 60 (sobra) Numero Pontos x 2 = 26,44
+
+RJ45 femea - 34 Nº pontos (pequena Sobra) 155,16
+Patch Panel - 30/24 Nº pontos/24 portas = 396,00
+Patch Cord - 30 = 186,55
+Ws Cord - 30 = 390,20
+
+Switch - 32 portas 1000 Mbps = 1064,00
+Rack - 7 us = 331,64 
+Canaleta -  388,7 13canaletas
+Link Internet (roteador)* -
+
+
+valor estruturado = 4227,09
+
+valor não estruturado = 3650,54
+
+mais pontos concentrados 80 reais por ponto
+meenos ponto concentrados 300 reais por ponto
+
+150 por cada windows instalado.
