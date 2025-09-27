@@ -1,1 +1,6 @@
-
+broadcast
+backplate 
+tablea de endewreço mac aves 
+buffer
+camada 2 modelo OSI
+full duplex
