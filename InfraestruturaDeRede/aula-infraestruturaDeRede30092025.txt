@@ -46,7 +46,10 @@ SW# Show Vlan Brief
 
 SW(config)#interface f0/1
 SW(config-if)#switchport access vlan 2
-^
+
+SW(config)#interface renge f0/1-12
+SW(config-if)#switchport access vlan 2
+
 …
 
 SW# Show RUN
