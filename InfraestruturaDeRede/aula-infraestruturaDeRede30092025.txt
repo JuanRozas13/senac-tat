@@ -46,10 +46,7 @@ SW# Show Vlan Brief
 
 SW(config)#interface f0/1
 SW(config-if)#switchport access vlan 2
-
-SW(config)#interface renge f0/1-12
-SW(config-if)#switchport access vlan 2
-
+^
 …
 
 SW# Show RUN
@@ -66,4 +63,37 @@ SW(config)#enable password senha123
 
 ....
 
+
+SW(config)#interface range fast 0/1-10
+SW(config-if-range)#switchport access vlan 35
+
+
+
+
+
+------
+SW(config)#interface g0/1
+SW(config-if)#switchport mode trunk
+----
+
+----
+SWA(config)#no ip domain lookup 
+CTRL + SHIFT + 6
+---
+
+---------------------------------------------
+#############################################
+
+SW-A(config)#int range gigabitEthernet 0/1-2
+SW-A(config-if-range)#channel-group 1 mode active
+
+
+SW-B(config)#int range gigabitEthernet 0/1-2
+SW-B(config-if-range)#channel-group 1 mode passive
+....
+show etherchannel
+show interfaces etherchannel
+
+##############################################
+______________________________________________
 
