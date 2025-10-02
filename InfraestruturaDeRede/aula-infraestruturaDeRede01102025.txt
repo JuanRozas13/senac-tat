@@ -1,2 +1,3 @@
 wr:salva
 ctrl+shift+6: sair do reload infinito
+STP
