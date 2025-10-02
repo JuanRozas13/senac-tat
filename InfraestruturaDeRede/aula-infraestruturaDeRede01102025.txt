@@ -4,3 +4,99 @@ STP
 etherchannel
 lacp
 nic team
+
+
+📘 Guia de Comandos e Protocolos de Redes (Cisco/Packet Tracer)
+🔹 Comandos básicos
+wr
+
+Significado: write memory
+
+Função: Salva a configuração atual (running-config) na memória de inicialização (startup-config).
+
+Importância: Se não usar esse comando, ao reiniciar o switch/roteador, todas as configurações serão perdidas.
+
+CTRL + SHIFT + 6
+
+Função: Interrompe processos em execução no console do Cisco IOS.
+
+Exemplo prático:
+
+Se você digitar ping 192.168.1.1 repeat 1000, o switch ficará "travado" tentando pingar.
+
+Ao usar CTRL + SHIFT + 6, você interrompe esse comando (sai do "reload infinito").
+
+🔹 Protocolos e Tecnologias
+STP (Spanning Tree Protocol)
+
+O que é: Protocolo de camada 2 usado em switches para evitar loops na rede.
+
+Como funciona:
+
+Se houver mais de um caminho entre switches, o STP bloqueia uma porta para evitar loops.
+
+Se o link principal cair, a porta bloqueada é reativada.
+
+Estados das portas no STP:
+
+Verde: Ativa (Forwarding).
+
+Laranja/Amber: Bloqueada (Blocking).
+
+Piscando: Transição (Listening/Learning).
+
+EtherChannel
+
+O que é: Tecnologia que permite agrupar várias interfaces físicas em um único link lógico.
+
+Vantagens:
+
+Aumenta a largura de banda (ex.: 2 portas de 1Gbps = 2Gbps agregados).
+
+Redundância: se um cabo cair, os outros continuam funcionando.
+
+Para o STP: O EtherChannel aparece como uma única porta lógica, evitando bloqueio.
+
+LACP (Link Aggregation Control Protocol)
+
+O que é: Padrão IEEE 802.3ad para formar EtherChannels automaticamente.
+
+Diferença para PAgP:
+
+LACP: Aberto (IEEE).
+
+PAgP: Proprietário da Cisco.
+
+Modos:
+
+Active: Ativo, tenta formar EtherChannel.
+
+Passive: Passivo, espera que o outro lado inicie.
+
+Configuração típica:
+
+interface range g0/1-2
+channel-group 1 mode active
+
+NIC Teaming
+
+O que é: Tecnologia usada em servidores/PCs para unir várias placas de rede (NICs) em um único adaptador lógico.
+
+Semelhante ao EtherChannel, mas no lado do host.
+
+Benefícios:
+
+Mais banda.
+
+Failover automático (se uma NIC cair, a outra continua).
+
+Usado em: Windows Server, Linux (com bonding), VMware ESXi, etc.
+
+🔹 Resumo Rápido
+Item	Função
+wr	Salva configuração na NVRAM (startup-config).
+CTRL+SHIFT+6	Cancela comando em execução (ping, traceroute, etc).
+STP	Evita loops de rede bloqueando portas redundantes.
+EtherChannel	Agrupa várias portas físicas em um link lógico.
+LACP	Padrão IEEE para negociar EtherChannel.
+NIC Teaming	Faz agregação de placas de rede em servidores/PCs.
