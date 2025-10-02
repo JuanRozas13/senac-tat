@@ -90,10 +90,21 @@ SW-A(config-if-range)#channel-group 1 mode active
 
 SW-B(config)#int range gigabitEthernet 0/1-2
 SW-B(config-if-range)#channel-group 1 mode passive
+
+
+
+SW-A(config)#int range gigabitEthernet 0/1-2
+SW-A(config-if-range)#channel-group 1 mode auto
+
+
+SW-B(config)#int range gigabitEthernet 0/1-2
+SW-B(config-if-range)#channel-group 1 mode desirable
+
 ....
 show etherchannel
 show interfaces etherchannel
 
 ##############################################
 ______________________________________________
+
 
