@@ -1,1 +1,148 @@
 
+  Processor board ID JAD05190MTZ (4292891495)
+M860 processor: part number 0, mask 49
+Bridging software.
+X.25 software, Version 3.0.0.
+2 FastEthernet/IEEE 802.3 interface(s)
+2 Low-speed serial(sync/async) network interface(s)
+32K bytes of non-volatile configuration memory.
+63488K bytes of ATA CompactFlash (Read/Write)
+
+
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]: n
+
+
+Press RETURN to get started!
+
+
+
+
+
+hostname BA
+interface fastEthernet 0/0
+ip address 192.168.40.1 255.255.255.0
+description PORTA LAN DE BA
+no shutdown 
+exit
+
+
+int s0/1
+ip add 12.0.0.2 255.0.0.0
+description PORTA WAN que liga MG com BA
+no shutdown 
+clock rate 128000
+bandwidth 128
+exit
+router rip
+network 192.168.40.0
+network 12.0.0.0
+SP(config-router)#^Z
+SP#wr
+
+
+
+Building configuration...
+[OK]
+SP#copy run star
+Destination filename [startup-config]? 
+Building configuration...
+[OK]
+SP#sh run
+Building configuration...
+
+Current configuration : 741 bytes
+!
+version 12.2
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname SP
+!
+!
+!
+!
+!
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ description PORTA LAN DE SP
+ ip address 192.168.10.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Serial0/0
+ description PORTA WAN que LIGA Sp ao RJ
+ ip address 10.0.0.1 255.0.0.0
+ clock rate 128000
+!
+interface Serial0/1
+ no ip address
+ shutdown
+!
+router rip
+ network 10.0.0.0
+ network 192.168.10.0
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+
+
+SP#
+SP#
+SP#
+%LINK-5-CHANGED: Interface Serial0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0, changed state to up
+
+SP#
+SP#
+SP#
