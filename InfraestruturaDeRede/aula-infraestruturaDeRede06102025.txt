@@ -1,1 +1,128 @@
 erase startup-config
+
+
+🧭 Documentação da Topologia de Rede – Conexão SP / RJ / BA
+🔹 Descrição Geral
+
+Esta topologia representa uma rede interligando três filiais localizadas em São Paulo (SP), Rio de Janeiro (RJ) e Bahia (BA), utilizando conexões seriais ponto a ponto entre os roteadores.
+Cada cidade possui sua própria sub-rede LAN e está conectada por enlaces seriais que utilizam endereçamento IP público para fins de simulação.
+
+🌐 Endereçamento IP
+🏙️ Roteador de São Paulo (Router0)
+
+Interface Serial0/1 → Conexão com RJ
+
+IP: 100.0.0.1
+
+Máscara: 255.0.0.0
+
+Clock rate configurado (DCE)
+
+Interface FastEthernet0/0 → Rede Local SP
+
+IP: 192.168.10.1
+
+Máscara: 255.255.255.0
+
+Gateway padrão da rede LAN-SP
+
+Rede LAN-SP:
+
+Faixa: 192.168.10.0/24
+
+Equipamentos: PCs e Laptops conectados via Switch
+
+Gateway: 192.168.10.1
+
+🌆 Roteador do Rio de Janeiro (Router1)
+
+Interface Serial0/0 → Conexão com SP
+
+IP: 100.0.0.2
+
+Máscara: 255.0.0.0
+
+(DTE)
+
+Interface Serial0/1 → Conexão com BA
+
+IP: 101.0.0.3
+
+Máscara: 255.0.0.0
+
+Clock rate configurado (DCE)
+
+Interface FastEthernet0/0 → Rede Local RJ
+
+IP: 192.168.20.1
+
+Máscara: 255.255.255.0
+
+Gateway da rede LAN-RJ
+
+Rede LAN-RJ:
+
+Faixa: 192.168.20.0/24
+
+Equipamentos: PCs e Laptops conectados via Switch
+
+Gateway: 192.168.20.1
+
+🌴 Roteador da Bahia (Router2)
+
+Interface Serial0/0 → Conexão com RJ
+
+IP: 101.0.0.4
+
+Máscara: 255.0.0.0
+
+(DTE)
+
+Interface FastEthernet0/0 → Rede Local BA
+
+IP: 192.168.30.1
+
+Máscara: 255.255.255.0
+
+Gateway da rede LAN-BA
+
+Rede LAN-BA:
+
+Faixa: 192.168.30.0/24
+
+Equipamentos: PCs e Laptops conectados via Switch
+
+Gateway: 192.168.30.1
+
+⚙️ Rotas Estáticas Configuradas
+No roteador SP:
+ip route 192.168.20.0 255.255.255.0 100.0.0.2
+ip route 192.168.30.0 255.255.255.0 100.0.0.2
+
+No roteador RJ:
+ip route 192.168.10.0 255.255.255.0 100.0.0.1
+ip route 192.168.30.0 255.255.255.0 101.0.0.4
+
+No roteador BA:
+ip route 192.168.10.0 255.255.255.0 101.0.0.3
+ip route 192.168.20.0 255.255.255.0 101.0.0.3
+
+🔧 Configurações Adicionais
+
+Encapsulamento serial padrão: HDLC
+
+Clock rate aplicado apenas nas interfaces DCE (SP e RJ)
+
+Roteamento estático utilizado para comunicação entre as três redes locais
+
+Switches em cada cidade conectando PCs e Laptops à respectiva LAN
+
+Máscaras padrão classe C (255.255.255.0) usadas nas redes locais
+
+Máscaras classe A (255.0.0.0) usadas nos enlaces seriais
+
+🧪 Testes de Conectividade
+
+Ping de SP → RJ → BA: ✅ Deve funcionar se as rotas estiverem configuradas corretamente.
+
+Ping entre PCs de diferentes cidades: ✅ Funcional após configuração das rotas estáticas.
